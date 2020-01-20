@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoort" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Studenten</title>
+    </head>
+    <body>
+        <% students.forEach(product =>{ %> 
+    <ul>
+        <li>Naam: <%= product.naam %></li>
+        <li>Geboortedatum <%= product.geboortedatum %></li>
+        <li>Studierichting <%= product.studierichting %></li>
+    </ul>
+    <% }) %>
+    <a href="/students/add">Voeg student toe</a>
+    </body>
+
+</html>
