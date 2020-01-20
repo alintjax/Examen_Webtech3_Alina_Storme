@@ -7,11 +7,11 @@
         <title>Studenten</title>
     </head>
     <body>
-        <% students.forEach(product =>{ %> 
+        <% students.forEach(student =>{ %> 
     <ul>
-        <li>Naam: <%= product.naam %></li>
-        <li>Geboortedatum <%= product.geboortedatum %></li>
-        <li>Studierichting <%= product.studierichting %></li>
+        <li>Naam: <%= student.naam %></li>
+        <li>Geboortedatum: <%= student.geboortedatum %></li>
+        <li>Studierichting: <%= student.studierichting %></li>
     </ul>
     <% }) %>
     <a href="/students/add">Voeg student toe</a>
